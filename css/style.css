@@ -1,0 +1,218 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Mountains+of+Christmas&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*===== Wrapper the both navigation and banner =====*/
+.wrapper {
+    position: fixed;
+    width: 100%;
+}
+
+    .wrapper .top_nav {
+        margin-top: 0px;
+        width: 100%;
+        height: 55px;
+        background: #353434;
+        padding: 0 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        /*This for top navigation wrap*/
+
+        .wrapper .top_nav .left {
+            display: flex;
+            align-items: center;
+        }
+
+            .wrapper .top_nav .left .logo p {
+                font-size: 18px;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                margin-right: 25px;
+                text-transform: uppercase;
+                word-spacing: 4px;
+                letter-spacing: 1px;
+            }
+
+    /*====This for bottom navigation wrap=====*/
+    .wrapper .bottom_nav {
+        width: 100%;
+        background: #f9f9f9;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        height: 50px;
+        padding: 0 50px;
+    }
+
+        .wrapper .bottom_nav ul {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .wrapper .bottom_nav ul li a {
+                color: #020202;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+
+        .wrapper .bottom_nav li a:hover:not(.active) {
+            background-color: rgb(182, 94, 94);
+            color: white;
+        }
+
+/*=== Banner wrap ===*/
+.wrap_banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap_banner .banner {
+    text-align: center;
+    color: white;
+}
+
+.wrap_banner .centered {
+    position: absolute;
+    line-height: 1.5;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+/*=== Main Wrapper Content ===*/
+.main-wrap {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/*=== Box 1  ===*/
+.grid-container {
+    column-count: 1;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgb(255, 194, 204);
+    text-align: left;
+    column-fill: auto;
+}
+
+.text-1 {
+    column-count: 1;
+    background-color: rgb(255, 194, 204);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    word-spacing: 3px;
+    font-style: normal;
+    text-align: justify;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2.0;
+}
+
+.indented {
+    padding-left: 50pt;
+    padding-right: 50pt;
+}
+
+.container {
+    column-count: 1;
+    padding: 30px;
+    margin: 20px;
+    column-fill: auto;
+}
+
+.container-2 {
+    column-count: 1;
+    padding: 30px;
+    margin: 20px;
+    column-fill: auto;
+}
+
+    .container-2 h2 {
+        color: maroon;
+    }
+
+    .container-2 p {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+.main-2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*=== Column container ===*/
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.left {
+    width: 75%;
+}
+
+.right {
+    width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive column section - when the screen is less than 700px wide, 
+make the two columns stack on top of each other instead of 
+next to each other */
+@media screen and (max-width: 700px) {
+    .column {
+        width: 100%;
+    }
+
+    .main-2 .poster {
+        width: 100%;
+    }
+
+    .footer p {
+        font-size: small;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* this to put copyrigt tags or any details information*/
+.footer {
+    background-color: #353434;
+    text-align: left;
+    padding: 10px;
+}
+
+    .footer p {
+        color: white;
+        letter-spacing: 1px;
+    }
